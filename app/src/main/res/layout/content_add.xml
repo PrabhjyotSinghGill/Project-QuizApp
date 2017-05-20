@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.project.course.project.AddActivity"
+    tools:showIn="@layout/activity_add">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/text_margin"-->
+        <!--android:text="@string/large_text" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write question here..."
+            android:lines="3"/>
+
+        <EditText
+            android:id="@+id/et_option_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="option-a"/>
+
+        <EditText
+            android:id="@+id/et_option_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="option-b"/>
+
+        <EditText
+            android:id="@+id/et_option_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="option-c"/>
+
+        <EditText
+            android:id="@+id/et_option_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="option-d"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Correct Answer"/>
+
+        <RadioGroup
+            android:id="@+id/radio_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a" />
+
+            <RadioButton
+                android:id="@+id/radio_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b" />
+
+            <RadioButton
+                android:id="@+id/radio_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_add_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Question"/>
+
+        <Button
+            android:id="@+id/button_delete_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Delete Question"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

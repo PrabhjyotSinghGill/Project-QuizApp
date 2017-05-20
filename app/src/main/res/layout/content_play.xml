@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.project.course.project.PlayActivity"
+    tools:showIn="@layout/activity_play">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_answer_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_a_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="a" />
+
+            <RadioButton
+                android:id="@+id/radio_b_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b" />
+
+            <RadioButton
+                android:id="@+id/radio_c_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c" />
+
+            <RadioButton
+                android:id="@+id/radio_d_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_answer_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Question"/>
+
+        <Button
+            android:id="@+id/score_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:text="Score : 0"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
