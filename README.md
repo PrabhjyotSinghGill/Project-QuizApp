@@ -1,2 +1,2 @@
 # project for course work
-## Created Quiz App Undergudance of Reza
+## Created Quiz App Under guidance of Professor Reza
